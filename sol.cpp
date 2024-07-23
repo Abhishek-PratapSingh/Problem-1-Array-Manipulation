@@ -6,7 +6,7 @@ int getMaxSum1(int n, vector<int>&arr){
     
      if(n==0) return 0;
      
-     int maxSum = 0;
+     int maxSum = INT_MIN;
      for(int start=0; start<n; start++){
          for(int end=start; end<n; end++){
              int currSum = 0;
@@ -25,7 +25,7 @@ int getMaxSum2(int n, vector<int>&arr){
     
      if(n==0) return 0;
     
-     int maxSum = 0;
+     int maxSum = INT_MIN;
      for(int start=0; start<n; start++){
          int currSum = 0; 
          for(int end=start; end<n; end++){
@@ -83,7 +83,7 @@ int getMaxSum4(int n, vector<int>&arr){
     
      if(n==0) return 0;
     
-     int maxSum = 0;
+     int maxSum = INT_MIN;
      int currSum = 0;
      for(int ptr=0; ptr<n; ptr++){
          currSum += arr[ptr];
